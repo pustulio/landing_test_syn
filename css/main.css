@@ -446,6 +446,58 @@ header .menu {
     (min-resolution: 120dpi) {
 }
 
+@media only screen and (max-width: 768px) {
+    header .logo img {
+        max-width: 150px;
+    }
+    header .syngenta-logo img {
+        max-width: 100px;
+    }
+    .menu a {
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    .cover-specs ul {
+        flex-wrap: wrap;
+    }
+    .cover-specs li {
+        margin: 15px;
+    }
+    .cultivo-video,
+    .cultivo-info {
+        width: 100%;
+    }
+    .cultivo-info > div > div {
+        width: auto;
+    }
+}
+@media only screen and (max-width: 468px) {
+    header .menu {
+        display: none;
+    }
+    img {
+        max-width: 100%;
+    }
+    .cultivo-info,
+    .cover-desc {
+        flex-direction: column;
+    }
+    .cover-desc img {
+        margin-top: 15px;
+    }
+    .otros-cultivos ul {
+        justify-content: center;
+    }
+    .footer ul {
+        flex-direction: column;
+    }
+    .footer li {
+        border: none;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
